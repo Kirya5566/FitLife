@@ -34,10 +34,9 @@ else:
     water_ml = user_weight * WATER_REC_ML  # расчет нормы воды в мл
     water_l = water_ml / WATER_ML_1L  # перевод мл в л
     # Вывод результата
-    result = (
+    print(
         f'\nОтчет для пользователя: {user_name.title()} ({user_age}) г.\n'
         f'Твой Индекс Массы Тела: {round(bmi, 1)}\n'
         f'Рекомендуемая норма воды: {water_l:.1f} л. в день\n'
         'Расчет окончен. Будьте здоровы!',
     )
-    print(result)
